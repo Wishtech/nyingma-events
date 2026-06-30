@@ -3,71 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dharma Programs &amp; Events</title>
+  <title>Explore the Events of the Nyingma Mandala</title>
   <style>
     :root {
-      --bg: #f7f5f0;
-      --card: #ffffff;
-      --ink: #2b2b2b;
-      --muted: #76706a;
-      --accent: #8a5a2b;
-      --accent-ink: #ffffff;
-      --border: #e6e1d8;
-      --row-alt: #faf8f4;
+      --gold: #e3c067;
+      --gold-deep: #c79a3a;
+      --ink: #eef2ff;
+      --muted: #aeb9e6;
+      --card: rgba(18, 33, 92, 0.55);
+      --header-bg: rgba(227, 192, 103, 0.10);
+      --border: rgba(227, 192, 103, 0.22);
+      --row-alt: rgba(255, 255, 255, 0.035);
+      --field-bg: rgba(8, 18, 60, 0.6);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
       color: var(--ink);
       line-height: 1.5;
+      background:
+        radial-gradient(circle at 50% -10%, #2746a8 0%, #16276e 38%, #0a1646 78%, #060f33 100%) fixed;
+      min-height: 100vh;
     }
-    .wrap { max-width: 1000px; margin: 0 auto; padding: 32px 20px 64px; }
-    header h1 { margin: 0 0 4px; font-size: 1.8rem; }
-    header p { margin: 0; color: var(--muted); }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 48px 24px 72px; }
+    header { text-align: center; margin-bottom: 8px; }
+    header h1 {
+      margin: 0 0 8px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 600;
+      font-size: 2.3rem;
+      letter-spacing: 0.02em;
+      color: var(--gold);
+      text-shadow: 0 1px 12px rgba(227, 192, 103, 0.25);
+    }
+    header p { margin: 0; color: var(--muted); font-size: 1rem; }
     .controls {
       display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
-      margin: 24px 0 16px;
+      margin: 32px 0 18px;
     }
     .controls input, .controls select {
-      padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px;
-      font-size: 0.95rem; background: var(--card); color: var(--ink);
+      padding: 11px 14px; border: 1px solid var(--border); border-radius: 10px;
+      font-size: 0.95rem; background: var(--field-bg); color: var(--ink);
     }
-    .controls input { flex: 1; min-width: 200px; }
-    .meta { color: var(--muted); font-size: 0.85rem; margin-left: auto; }
+    .controls input::placeholder { color: var(--muted); }
+    .controls select option { color: #111; }
+    .controls input:focus, .controls select:focus { outline: none; border-color: var(--gold); }
+    .controls input { flex: 1; min-width: 220px; }
+    .controls input[type="checkbox"] { flex: none; min-width: 0; accent-color: var(--gold-deep); }
+    .meta { color: var(--gold); font-size: 0.85rem; margin-left: auto; font-weight: 600; }
     .table-card {
-      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-      overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(6px);
     }
-    table { width: 100%; border-collapse: collapse; }
-    th, td { text-align: left; padding: 12px 16px; vertical-align: top; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    col.c-org   { width: 20%; }
+    col.c-name  { width: 36%; }
+    col.c-date  { width: 28%; }
+    col.c-link  { width: 16%; }
+    th, td { text-align: left; padding: 16px 22px; vertical-align: top; }
     thead th {
-      background: #efe9df; font-size: 0.8rem; text-transform: uppercase;
-      letter-spacing: 0.04em; color: var(--muted); border-bottom: 1px solid var(--border);
+      background: var(--header-bg);
+      font-size: 0.72rem; text-transform: uppercase;
+      letter-spacing: 0.09em; color: var(--gold);
+      border-bottom: 1px solid var(--border); font-weight: 700;
     }
-    tbody tr { border-bottom: 1px solid var(--border); }
+    tbody tr { border-bottom: 1px solid rgba(227, 192, 103, 0.12); }
     tbody tr:nth-child(even) { background: var(--row-alt); }
     tbody tr:last-child { border-bottom: none; }
-    .org { font-weight: 600; white-space: nowrap; }
-    .date { white-space: nowrap; color: var(--muted); }
+    tbody tr:hover { background: rgba(227, 192, 103, 0.07); }
+    .org { font-weight: 700; color: #fff; }
+    .name { color: var(--ink); }
+    .date { color: var(--muted); font-variant-numeric: tabular-nums; }
+    td.link { text-align: right; }
     .btn {
-      display: inline-block; padding: 6px 14px; border-radius: 999px;
-      background: var(--accent); color: var(--accent-ink); text-decoration: none;
-      font-size: 0.85rem; font-weight: 600; white-space: nowrap;
+      display: inline-block; padding: 8px 18px; border-radius: 999px;
+      background: linear-gradient(180deg, var(--gold) 0%, var(--gold-deep) 100%);
+      color: #1a1205; text-decoration: none;
+      font-size: 0.85rem; font-weight: 700; white-space: nowrap;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
-    .btn:hover { opacity: 0.9; }
-    .btn.disabled { background: var(--border); color: var(--muted); pointer-events: none; }
-    .empty { padding: 40px; text-align: center; color: var(--muted); }
-    footer { margin-top: 24px; font-size: 0.8rem; color: var(--muted); text-align: center; }
-    @media (max-width: 640px) {
+    .btn:hover { filter: brightness(1.08); }
+    .btn.disabled {
+      background: rgba(255, 255, 255, 0.06); color: var(--muted);
+      box-shadow: none; pointer-events: none; font-weight: 600;
+    }
+    .empty { padding: 48px; text-align: center; color: var(--muted); }
+    footer { margin-top: 28px; font-size: 0.82rem; color: var(--muted); text-align: center; }
+    @media (max-width: 680px) {
+      .wrap { padding: 32px 16px 56px; }
+      header h1 { font-size: 1.7rem; }
+      table, colgroup, col { display: revert; }
+      table { table-layout: auto; }
       thead { display: none; }
       table, tbody, tr, td { display: block; width: 100%; }
-      tr { padding: 12px 0; }
-      td { padding: 4px 16px; border: none; }
+      tr { padding: 14px 4px; }
+      td { padding: 4px 18px; border: none; }
+      td.link { text-align: left; padding-top: 8px; }
       td[data-label]::before {
         content: attr(data-label); display: block;
-        font-size: 0.7rem; text-transform: uppercase; color: var(--muted); letter-spacing: 0.04em;
+        font-size: 0.68rem; text-transform: uppercase; color: var(--gold); letter-spacing: 0.08em;
+        margin-bottom: 2px;
       }
     }
   </style>
@@ -75,8 +115,8 @@
 <body>
   <div class="wrap">
     <header>
-      <h1>Dharma Programs &amp; Events</h1>
-      <p>Upcoming programs aggregated from six organizations. Updated automatically each month.</p>
+      <h1>Explore the Events of the Nyingma Mandala</h1>
+      <p>Upcoming programs across the Institutes, centers, and projects — updated automatically each month.</p>
     </header>
 
     <div class="controls">
@@ -90,6 +130,12 @@
 
     <div class="table-card">
       <table>
+        <colgroup>
+          <col class="c-org" />
+          <col class="c-name" />
+          <col class="c-date" />
+          <col class="c-link" />
+        </colgroup>
         <thead>
           <tr>
             <th>Organization</th>
@@ -133,9 +179,9 @@
           : `<span class="btn disabled">No link</span>`;
         return `<tr>
           <td data-label="Organization" class="org">${escapeHtml(e.organization)}</td>
-          <td data-label="Event Name">${escapeHtml(e.event_name)}</td>
+          <td data-label="Event Name" class="name">${escapeHtml(e.event_name)}</td>
           <td data-label="Date" class="date">${escapeHtml(e.event_date || "—")}</td>
-          <td data-label="Link">${btn}</td>
+          <td data-label="Link" class="link">${btn}</td>
         </tr>`;
       }).join("");
 
