@@ -133,6 +133,11 @@
     }
     @media (max-width: 680px) {
       .wrap { padding: 36px 16px 60px; }
+      /* Stack the controls so nothing overflows on narrow screens */
+      .controls { flex-direction: column; align-items: stretch; gap: 12px; margin: 28px 0 18px; }
+      .controls input, .controls select { width: 100%; min-width: 0; flex: none; }
+      .check { justify-content: flex-start; }
+      .meta { margin-left: 0; }
       table, colgroup, col { display: revert; }
       table { table-layout: auto; }
       thead { display: none; }
@@ -140,6 +145,7 @@
       tr { padding: 16px 4px; }
       td { padding: 5px 20px; border: none; }
       td.link { text-align: left; padding-top: 10px; }
+      .btn { padding: 13px 24px; }  /* ~44px tall — comfortable touch target */
       td[data-label]::before {
         content: attr(data-label); display: block;
         font-family: "Cinzel", serif; font-size: 11px; text-transform: uppercase;
@@ -151,7 +157,6 @@
 <body>
   <div class="wrap">
     <header>
-      <p class="eyebrow">A Network of Dharma Centers</p>
       <h1>Explore the Events of the Nyingma Mandala</h1>
       <p>Upcoming programs across the Institutes, centers, and projects — updated automatically each month.</p>
     </header>
