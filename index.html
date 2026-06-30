@@ -4,110 +4,146 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Explore the Events of the Nyingma Mandala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --gold: #e3c067;
-      --gold-deep: #c79a3a;
-      --ink: #eef2ff;
-      --muted: #aeb9e6;
-      --card: rgba(18, 33, 92, 0.55);
-      --header-bg: rgba(227, 192, 103, 0.10);
-      --border: rgba(227, 192, 103, 0.22);
-      --row-alt: rgba(255, 255, 255, 0.035);
-      --field-bg: rgba(8, 18, 60, 0.6);
+      /* Nyingma palette */
+      --bg-base:    #060D2C;
+      --blue-deep:  #0A1338;
+      --blue-mid:   #14245F;
+      --blue-light: #1D3173;
+      --gold-deep:  #A8801F;
+      --gold:       #D7AF52;
+      --gold-bright:#F0D488;
+      --label:      #ECDCA2;
+      --cream:      #F5ECCF;
+      /* derived */
+      --border:     rgba(215, 175, 82, 0.55);
+      --divider:    rgba(215, 175, 82, 0.30);
+      --field-bg:   rgba(10, 19, 56, 0.66);
+      --card-bg:    rgba(20, 36, 95, 0.42);
+      --row-alt:    rgba(240, 212, 136, 0.035);
+      --inset-hi:   inset 0 1px 0 rgba(240, 212, 136, 0.18);
+      --candle-glow:0 0 40px rgba(240, 212, 136, 0.10);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--ink);
-      line-height: 1.5;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 18px;
+      color: var(--cream);
+      line-height: 1.55;
       background:
-        radial-gradient(circle at 50% -10%, #2746a8 0%, #16276e 38%, #0a1646 78%, #060f33 100%) fixed;
+        radial-gradient(ellipse at 50% -8%, #1D3173 0%, #14245F 26%, #0A1338 62%, #060D2C 100%) fixed;
       min-height: 100vh;
     }
-    .wrap { max-width: 1180px; margin: 0 auto; padding: 48px 24px 72px; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 56px 24px 80px; }
     header { text-align: center; margin-bottom: 8px; }
-    header h1 {
-      margin: 0 0 8px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-weight: 600;
-      font-size: 2.3rem;
-      letter-spacing: 0.02em;
-      color: var(--gold);
-      text-shadow: 0 1px 12px rgba(227, 192, 103, 0.25);
+    .eyebrow {
+      font-family: "Cinzel", serif; font-weight: 600;
+      font-size: 12px; letter-spacing: 0.42em; text-transform: uppercase;
+      color: var(--gold); margin: 0 0 16px; padding-left: 0.42em;
     }
-    header p { margin: 0; color: var(--muted); font-size: 1rem; }
+    header h1 {
+      margin: 0 0 14px;
+      font-family: "Cinzel", serif; font-weight: 600; text-transform: uppercase;
+      font-size: clamp(28px, 5vw, 44px); letter-spacing: 0.04em;
+      color: var(--gold-bright);
+      text-shadow: 0 0 26px rgba(240, 212, 136, 0.28);
+    }
+    header p {
+      margin: 0 auto; max-width: 640px;
+      font-weight: 500; font-size: 20px; color: var(--label); opacity: 0.85;
+    }
     .controls {
-      display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
-      margin: 32px 0 18px;
+      display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
+      margin: 40px 0 20px;
     }
     .controls input, .controls select {
-      padding: 11px 14px; border: 1px solid var(--border); border-radius: 10px;
-      font-size: 0.95rem; background: var(--field-bg); color: var(--ink);
+      padding: 11px 16px; border: 1.5px solid var(--border); border-radius: 999px;
+      font-family: "Cormorant Garamond", Georgia, serif; font-size: 17px;
+      background: var(--field-bg); color: var(--cream); box-shadow: var(--inset-hi);
     }
-    .controls input::placeholder { color: var(--muted); }
+    .controls input::placeholder { color: var(--label); opacity: 0.6; }
     .controls select option { color: #111; }
-    .controls input:focus, .controls select:focus { outline: none; border-color: var(--gold); }
+    .controls input:focus, .controls select:focus { outline: none; border-color: var(--gold-bright); }
     .controls input { flex: 1; min-width: 220px; }
-    .controls input[type="checkbox"] { flex: none; min-width: 0; accent-color: var(--gold-deep); }
-    .meta { color: var(--gold); font-size: 0.85rem; margin-left: auto; font-weight: 600; }
+    .check {
+      display: flex; align-items: center; gap: 8px; white-space: nowrap;
+      font-family: "Cinzel", serif; font-size: 12px; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--label);
+    }
+    .check input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--gold); }
+    .meta {
+      margin-left: auto; font-family: "Cinzel", serif; font-weight: 600;
+      font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-bright);
+    }
     .table-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
+      background: var(--card-bg);
+      border: 1.5px solid var(--border);
+      border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
-      backdrop-filter: blur(6px);
+      box-shadow: var(--candle-glow), var(--inset-hi);
+      backdrop-filter: blur(7px);
     }
     table { width: 100%; border-collapse: collapse; table-layout: fixed; }
     col.c-org   { width: 20%; }
     col.c-name  { width: 36%; }
     col.c-date  { width: 28%; }
     col.c-link  { width: 16%; }
-    th, td { text-align: left; padding: 16px 22px; vertical-align: top; }
+    th, td { text-align: left; padding: 17px 24px; vertical-align: top; }
     thead th {
-      background: var(--header-bg);
-      font-size: 0.72rem; text-transform: uppercase;
-      letter-spacing: 0.09em; color: var(--gold);
-      border-bottom: 1px solid var(--border); font-weight: 700;
+      background: rgba(240, 212, 136, 0.07);
+      font-family: "Cinzel", serif; font-weight: 600;
+      font-size: 12px; text-transform: uppercase; letter-spacing: 0.14em;
+      color: var(--gold); border-bottom: 1px solid var(--divider);
     }
-    tbody tr { border-bottom: 1px solid rgba(227, 192, 103, 0.12); }
+    tbody tr { border-bottom: 1px solid rgba(215, 175, 82, 0.16); }
     tbody tr:nth-child(even) { background: var(--row-alt); }
     tbody tr:last-child { border-bottom: none; }
-    tbody tr:hover { background: rgba(227, 192, 103, 0.07); }
-    .org { font-weight: 700; color: #fff; }
-    .name { color: var(--ink); }
-    .date { color: var(--muted); font-variant-numeric: tabular-nums; }
+    tbody tr:hover { background: rgba(240, 212, 136, 0.06); }
+    .org   { font-weight: 600; font-size: 19px; color: var(--gold-bright); }
+    .name  { color: var(--cream); font-size: 18px; }
+    .date  { color: var(--label); opacity: 0.85; font-variant-numeric: tabular-nums; }
     td.link { text-align: right; }
     .btn {
-      display: inline-block; padding: 8px 18px; border-radius: 999px;
-      background: linear-gradient(180deg, var(--gold) 0%, var(--gold-deep) 100%);
-      color: #1a1205; text-decoration: none;
-      font-size: 0.85rem; font-weight: 700; white-space: nowrap;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      display: inline-block; padding: 9px 20px; border-radius: 999px;
+      font-family: "Cinzel", serif; font-weight: 600;
+      font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+      text-decoration: none; white-space: nowrap;
+      color: var(--gold-bright);
+      background: linear-gradient(165deg, #243A82 0%, #15235C 50%, #0C1640 100%);
+      border: 1px solid var(--border);
+      box-shadow: var(--inset-hi);
+      transition: transform 0.15s ease, border-color 0.15s ease;
     }
-    .btn:hover { filter: brightness(1.08); }
+    .btn:hover { transform: scale(1.05); border-color: var(--gold-bright); }
     .btn.disabled {
-      background: rgba(255, 255, 255, 0.06); color: var(--muted);
-      box-shadow: none; pointer-events: none; font-weight: 600;
+      color: var(--label); opacity: 0.45;
+      background: rgba(255, 255, 255, 0.04); border-color: var(--divider);
+      box-shadow: none; pointer-events: none;
     }
-    .empty { padding: 48px; text-align: center; color: var(--muted); }
-    footer { margin-top: 28px; font-size: 0.82rem; color: var(--muted); text-align: center; }
+    .empty { padding: 52px; text-align: center; color: var(--label); opacity: 0.8; font-size: 19px; }
+    footer {
+      margin-top: 32px; text-align: center;
+      font-family: "Cinzel", serif; font-size: 11px; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--gold); opacity: 0.7;
+    }
     @media (max-width: 680px) {
-      .wrap { padding: 32px 16px 56px; }
-      header h1 { font-size: 1.7rem; }
+      .wrap { padding: 36px 16px 60px; }
       table, colgroup, col { display: revert; }
       table { table-layout: auto; }
       thead { display: none; }
       table, tbody, tr, td { display: block; width: 100%; }
-      tr { padding: 14px 4px; }
-      td { padding: 4px 18px; border: none; }
-      td.link { text-align: left; padding-top: 8px; }
+      tr { padding: 16px 4px; }
+      td { padding: 5px 20px; border: none; }
+      td.link { text-align: left; padding-top: 10px; }
       td[data-label]::before {
         content: attr(data-label); display: block;
-        font-size: 0.68rem; text-transform: uppercase; color: var(--gold); letter-spacing: 0.08em;
-        margin-bottom: 2px;
+        font-family: "Cinzel", serif; font-size: 11px; text-transform: uppercase;
+        color: var(--gold); letter-spacing: 0.12em; margin-bottom: 3px;
       }
     }
   </style>
@@ -115,6 +151,7 @@
 <body>
   <div class="wrap">
     <header>
+      <p class="eyebrow">A Network of Dharma Centers</p>
       <h1>Explore the Events of the Nyingma Mandala</h1>
       <p>Upcoming programs across the Institutes, centers, and projects — updated automatically each month.</p>
     </header>
@@ -122,7 +159,7 @@
     <div class="controls">
       <input id="search" type="search" placeholder="Search events or organizations…" />
       <select id="orgFilter"><option value="">All organizations</option></select>
-      <label style="display:flex;align-items:center;gap:6px;font-size:0.9rem;color:var(--muted);white-space:nowrap;">
+      <label class="check">
         <input id="hidePast" type="checkbox" checked /> Hide past events
       </label>
       <span class="meta" id="meta"></span>
