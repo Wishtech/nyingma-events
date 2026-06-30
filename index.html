@@ -120,6 +120,14 @@
       transition: transform 0.15s ease, border-color 0.15s ease;
     }
     .btn:hover { transform: scale(1.05); border-color: var(--gold-bright); }
+    /* Fallback link to the org's programs page — outline, no fill, dimmer */
+    .btn.alt {
+      background: transparent;
+      color: var(--gold);
+      border: 1px dashed var(--divider);
+      box-shadow: none;
+    }
+    .btn.alt:hover { border-style: solid; border-color: var(--gold-bright); color: var(--gold-bright); }
     .btn.disabled {
       color: var(--label); opacity: 0.45;
       background: rgba(255, 255, 255, 0.04); border-color: var(--divider);
@@ -216,9 +224,19 @@
 
       tbody.innerHTML = filtered.map((e) => {
         const hasLink = e.link && /^https?:\/\//.test(e.link);
-        const btn = hasLink
-          ? `<a class="btn" href="${e.link}" target="_blank" rel="noopener">View Event</a>`
-          : `<span class="btn disabled">No link</span>`;
+        const hasSource = e.source_page && /^https?:\/\//.test(e.source_page);
+        let btn;
+        if (hasLink) {
+          // Direct link to the event's own detail page.
+          btn = `<a class="btn" href="${escapeHtml(e.link)}" target="_blank" rel="noopener">View Event</a>`;
+        } else if (hasSource) {
+          // No direct event link found — fall back to the organization's
+          // programs page (the page we scraped) with a distinct outline style.
+          btn = `<a class="btn alt" href="${escapeHtml(e.source_page)}" target="_blank" rel="noopener"
+                    title="No direct event link found — opens this organization's programs page">Visit Site</a>`;
+        } else {
+          btn = `<span class="btn disabled">No link</span>`;
+        }
         return `<tr>
           <td data-label="Organization" class="org">${escapeHtml(e.organization)}</td>
           <td data-label="Event Name" class="name">${escapeHtml(e.event_name)}</td>
