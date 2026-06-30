@@ -1,0 +1,8 @@
+[
+  { "organization": "Ratna Ling",                  "label": "Online Programs",     "url": "https://ratnaling.org/online-programs/" },
+  { "organization": "Odiyan",                       "label": "Odiyan Programs",     "url": "https://odiyan.org/odiyan-programs/" },
+  { "organization": "Nyingma Institute",            "label": "Courses",             "url": "https://nyingmainstitute.com/courses/" },
+  { "organization": "Center for Creative Inquiry",  "label": "Upcoming Programs",   "url": "https://creativeinquiry.org/programs/" },
+  { "organization": "Mangalam Research Center",     "label": "Programs",            "url": "https://mangalamresearch.org/" },
+  { "organization": "Dharma College",               "label": "Class Calendar",      "url": "https://dharma-college.com/calendar/" }
+]

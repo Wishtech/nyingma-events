@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dharma Programs &amp; Events</title>
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --card: #ffffff;
+      --ink: #2b2b2b;
+      --muted: #76706a;
+      --accent: #8a5a2b;
+      --accent-ink: #ffffff;
+      --border: #e6e1d8;
+      --row-alt: #faf8f4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 32px 20px 64px; }
+    header h1 { margin: 0 0 4px; font-size: 1.8rem; }
+    header p { margin: 0; color: var(--muted); }
+    .controls {
+      display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+      margin: 24px 0 16px;
+    }
+    .controls input, .controls select {
+      padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px;
+      font-size: 0.95rem; background: var(--card); color: var(--ink);
+    }
+    .controls input { flex: 1; min-width: 200px; }
+    .meta { color: var(--muted); font-size: 0.85rem; margin-left: auto; }
+    .table-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 12px 16px; vertical-align: top; }
+    thead th {
+      background: #efe9df; font-size: 0.8rem; text-transform: uppercase;
+      letter-spacing: 0.04em; color: var(--muted); border-bottom: 1px solid var(--border);
+    }
+    tbody tr { border-bottom: 1px solid var(--border); }
+    tbody tr:nth-child(even) { background: var(--row-alt); }
+    tbody tr:last-child { border-bottom: none; }
+    .org { font-weight: 600; white-space: nowrap; }
+    .date { white-space: nowrap; color: var(--muted); }
+    .btn {
+      display: inline-block; padding: 6px 14px; border-radius: 999px;
+      background: var(--accent); color: var(--accent-ink); text-decoration: none;
+      font-size: 0.85rem; font-weight: 600; white-space: nowrap;
+    }
+    .btn:hover { opacity: 0.9; }
+    .btn.disabled { background: var(--border); color: var(--muted); pointer-events: none; }
+    .empty { padding: 40px; text-align: center; color: var(--muted); }
+    footer { margin-top: 24px; font-size: 0.8rem; color: var(--muted); text-align: center; }
+    @media (max-width: 640px) {
+      thead { display: none; }
+      table, tbody, tr, td { display: block; width: 100%; }
+      tr { padding: 12px 0; }
+      td { padding: 4px 16px; border: none; }
+      td[data-label]::before {
+        content: attr(data-label); display: block;
+        font-size: 0.7rem; text-transform: uppercase; color: var(--muted); letter-spacing: 0.04em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Dharma Programs &amp; Events</h1>
+      <p>Upcoming programs aggregated from six organizations. Updated automatically each month.</p>
+    </header>
+
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search events or organizations…" />
+      <select id="orgFilter"><option value="">All organizations</option></select>
+      <label style="display:flex;align-items:center;gap:6px;font-size:0.9rem;color:var(--muted);white-space:nowrap;">
+        <input id="hidePast" type="checkbox" checked /> Hide past events
+      </label>
+      <span class="meta" id="meta"></span>
+    </div>
+
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>Organization</th>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <div class="empty" id="empty" hidden>No events match your search.</div>
+    </div>
+
+    <footer id="footer"></footer>
+  </div>
+
+  <script>
+    let allEvents = [];
+
+    function render() {
+      const q = document.getElementById("search").value.trim().toLowerCase();
+      const org = document.getElementById("orgFilter").value;
+      const hidePast = document.getElementById("hidePast").checked;
+      const today = new Date().toISOString().slice(0, 10);
+      const tbody = document.getElementById("rows");
+      const empty = document.getElementById("empty");
+
+      const filtered = allEvents.filter((e) => {
+        const matchesOrg = !org || e.organization === org;
+        const hay = (e.event_name + " " + e.organization).toLowerCase();
+        // Only hide events we can confidently date in the past. Undated
+        // events (no ISO date) are always kept since we can't be sure.
+        const isPast = hidePast && e.event_date_iso && e.event_date_iso < today;
+        return matchesOrg && !isPast && (!q || hay.includes(q));
+      });
+
+      tbody.innerHTML = filtered.map((e) => {
+        const hasLink = e.link && /^https?:\/\//.test(e.link);
+        const btn = hasLink
+          ? `<a class="btn" href="${e.link}" target="_blank" rel="noopener">View Event</a>`
+          : `<span class="btn disabled">No link</span>`;
+        return `<tr>
+          <td data-label="Organization" class="org">${escapeHtml(e.organization)}</td>
+          <td data-label="Event Name">${escapeHtml(e.event_name)}</td>
+          <td data-label="Date" class="date">${escapeHtml(e.event_date || "—")}</td>
+          <td data-label="Link">${btn}</td>
+        </tr>`;
+      }).join("");
+
+      empty.hidden = filtered.length > 0;
+      document.getElementById("meta").textContent =
+        `${filtered.length} of ${allEvents.length} events`;
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, (c) => (
+        { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
+      ));
+    }
+
+    async function load() {
+      try {
+        const res = await fetch("data/events.json?v=" + Date.now());
+        const data = await res.json();
+        allEvents = data.events || [];
+
+        const orgs = [...new Set(allEvents.map((e) => e.organization))].sort();
+        const sel = document.getElementById("orgFilter");
+        for (const o of orgs) {
+          const opt = document.createElement("option");
+          opt.value = o; opt.textContent = o;
+          sel.appendChild(opt);
+        }
+
+        const when = data.generated_at
+          ? new Date(data.generated_at).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })
+          : "unknown";
+        document.getElementById("footer").textContent =
+          `Last updated ${when} · ${data.event_count ?? allEvents.length} events from ${data.site_count ?? "?"} sites`;
+
+        render();
+      } catch (err) {
+        document.getElementById("rows").innerHTML = "";
+        document.getElementById("empty").hidden = false;
+        document.getElementById("empty").textContent =
+          "Could not load events.json yet. Run the scraper or wait for the first scheduled update.";
+      }
+    }
+
+    document.getElementById("search").addEventListener("input", render);
+    document.getElementById("orgFilter").addEventListener("change", render);
+    document.getElementById("hidePast").addEventListener("change", render);
+    load();
+  </script>
+</body>
+</html>

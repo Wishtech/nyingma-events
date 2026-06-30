@@ -1,0 +1,12 @@
+{
+  "name": "dharma-event-tracker",
+  "version": "1.0.0",
+  "description": "Aggregates upcoming programs from six dharma organizations via Firecrawl and displays them as a table on GitHub Pages.",
+  "type": "module",
+  "scripts": {
+    "scrape": "node scripts/scrape.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
