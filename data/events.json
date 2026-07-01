@@ -1,9 +1,17 @@
 {
-  "generated_at": "2026-06-30T10:40:04.591Z",
+  "generated_at": "2026-07-01T09:41:18.081Z",
   "site_count": 6,
-  "event_count": 64,
+  "event_count": 62,
   "errors": [],
   "events": [
+    {
+      "organization": "Mangalam Research Center",
+      "event_name": "Classical Sanskrit for Students of Buddhism",
+      "event_date": "January 5, 2026 – June 10, 2026*",
+      "event_date_iso": "2026-01-05",
+      "link": "https://www.mangalamresearch.org/language-programs/",
+      "source_page": "https://mangalamresearch.org/"
+    },
     {
       "organization": "Dharma College",
       "event_name": "Gesture of Great Love 3",
@@ -47,7 +55,7 @@
     {
       "organization": "Mangalam Research Center",
       "event_name": "The Practice of Creativity: Expressions of the Dharma in the Arts and the Natural World",
-      "event_date": "February 27,  5-6:30",
+      "event_date": "February 27, 5-6:30",
       "event_date_iso": "2026-02-27",
       "link": "https://www.mangalamresearch.org/the-practice-of-creativity-workshops-expressions-of-the-dharma-in-the-arts-and-the-natural-world/",
       "source_page": "https://mangalamresearch.org/"
@@ -78,7 +86,7 @@
     },
     {
       "organization": "Mangalam Research Center",
-      "event_name": "Davey Tomlinson, Reading Ratnarakṣita’s Defense of Deity Yoga",
+      "event_name": "Reading Ratnarakṣita’s Defense of Deity Yoga",
       "event_date": "Monday, Mar 30, 2026, 3-4:30 pm PT",
       "event_date_iso": "2026-03-30",
       "link": "https://mangalamresearch.org/language-programs/%20.%20",
@@ -95,7 +103,7 @@
     {
       "organization": "Mangalam Research Center",
       "event_name": "Varieties of Non-Dualism in Late Indian Yogācāra​",
-      "event_date": "April 1, 5:30-7",
+      "event_date": "April 1, 5:30-7",
       "event_date_iso": "2026-04-01",
       "link": "https://mangalamresearch.org/varieties-of-non-dualism-in-late-indian-yogacara/",
       "source_page": "https://mangalamresearch.org/"
@@ -121,14 +129,6 @@
       "event_name": "Mind Space: Openness and Being",
       "event_date": "Apr - 07",
       "event_date_iso": "2026-04-07",
-      "link": "",
-      "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
-      "organization": "Dharma College",
-      "event_name": "Ways of Knowing Seminar",
-      "event_date": "Apr - 12",
-      "event_date_iso": "2026-04-12",
       "link": "",
       "source_page": "https://dharma-college.com/calendar/"
     },
@@ -237,17 +237,9 @@
       "source_page": "https://dharma-college.com/calendar/"
     },
     {
-      "organization": "Dharma College",
-      "event_name": "Time Space and Knowledge (New Edition) 3",
-      "event_date": "May - 15",
-      "event_date_iso": "2026-05-15",
-      "link": "",
-      "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
       "organization": "Odiyan",
       "event_name": "being now: how to navigate uncertain times",
-      "event_date": "May 23, Sat, 9 am – 4:30 pm PDT",
+      "event_date": "May 23, Sat, 9 am – 4:30 pm PDT\nMay 24, Sun, 9 am – 12 pm PDT",
       "event_date_iso": "2026-05-23",
       "link": "https://odiyan.org/odiyan-programs/being-now/",
       "source_page": "https://odiyan.org/odiyan-programs/"
@@ -375,7 +367,7 @@
     {
       "organization": "Center for Creative Inquiry",
       "event_name": "Living Without Stress, a retreat at Ratna Ling Retreat Center",
-      "event_date": "July 31",
+      "event_date": "July 31 - August ...",
       "event_date_iso": "2026-07-31",
       "link": "https://creativeinquiry.org/events/living-without-stress/",
       "source_page": "https://creativeinquiry.org/programs/"
@@ -391,7 +383,7 @@
     {
       "organization": "Odiyan",
       "event_name": "a treasure within",
-      "event_date": "Aug 8, Sat, 9 am – 4 pm PDT",
+      "event_date": "Aug 8, Sat, 9 am – 4 pm PDT\nAug 9, Sun, 9 am – 12:30 pm PDT",
       "event_date_iso": "2026-08-08",
       "link": "https://odiyan.org/odiyan-programs/a-treasure-within/",
       "source_page": "https://odiyan.org/odiyan-programs/"
@@ -455,7 +447,7 @@
     {
       "organization": "Center for Creative Inquiry",
       "event_name": "How to Be More Fully Alive",
-      "event_date": "September 20",
+      "event_date": "20 September",
       "event_date_iso": "2026-09-20",
       "link": "https://creativeinquiry.org/events/how-to-be-more-fully-alive/",
       "source_page": "https://creativeinquiry.org/programs/"
@@ -506,14 +498,6 @@
       "event_date": "Nov - 14",
       "event_date_iso": "2026-11-14",
       "link": "https://dharma-college.com/feeling-fully-alive/",
-      "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
-      "organization": "Dharma College",
-      "event_name": "Ways of Knowing Seminar",
-      "event_date": "Dec - 28",
-      "event_date_iso": "2026-12-28",
-      "link": "",
       "source_page": "https://dharma-college.com/calendar/"
     }
   ]
