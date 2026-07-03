@@ -1,6 +1,6 @@
 # Dharma Programs & Events
 
-A static webpage that displays upcoming programs from six organizations in a table
+A static webpage that displays upcoming programs from seven organizations in a table
 (**Organization · Event Name · Date · Link**). Event data is extracted with the
 [Firecrawl](https://firecrawl.dev) API and refreshed **automatically every month**
 by a GitHub Actions workflow. Hosted free on **GitHub Pages**.
@@ -11,7 +11,7 @@ by a GitHub Actions workflow. Hosted free on **GitHub Pages**.
 GitHub Actions (monthly cron)
       │  runs scripts/scrape.js with FIRECRAWL_API_KEY
       ▼
-Firecrawl  ──scrapes──▶  the 6 sites in sites.json
+Firecrawl  ──scrapes──▶  the sites in sites.json
       │
       ▼
 data/events.json   ──committed back to the repo──▶  GitHub Pages serves index.html
@@ -23,7 +23,7 @@ data/events.json   ──committed back to the repo──▶  GitHub Pages serve
 | File | Purpose |
 |------|---------|
 | `index.html` | The page. Loads `data/events.json` and renders the searchable table. |
-| `sites.json` | The 6 organizations and their URLs. Edit to add/remove sites. |
+| `sites.json` | The organizations and their URLs. Edit to add/remove sites. |
 | `scripts/scrape.js` | Calls Firecrawl for each site and writes `data/events.json`. |
 | `data/events.json` | The extracted event data (generated; committed by the workflow). |
 | `.github/workflows/update-events.yml` | Monthly cron + manual "Run workflow" button. |
@@ -62,7 +62,7 @@ python3 -m http.server 4173     # then open http://localhost:4173
   a year (`Jun - 30`), so the year can't always be determined. The page's *Hide past
   events* toggle only hides events it can confidently date in the past; undated events
   are always shown.
-- **Firecrawl credits:** ~50 credits per site → ~300 credits per monthly run for 6 sites.
+- **Firecrawl credits:** ~50 credits per site → ~350 credits per monthly run for 7 sites.
   Make sure your Firecrawl plan covers that.
 - **Extraction is AI-based**, so occasional misses or stray rows are possible. Adjust the
   prompt in `scripts/scrape.js` if a site needs tuning.
