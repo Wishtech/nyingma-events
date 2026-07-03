@@ -30,6 +30,8 @@ const EXTRACT_PROMPT = [
   "- event_date: the date exactly as shown on the page (keep the original text)",
   "- event_date_iso: the start date as YYYY-MM-DD if you can determine it (including the year); otherwise an empty string",
   "- link: the absolute URL to that event's own detail/registration page",
+  "- language: the language the event title is written in, as a full English word",
+  "  (e.g. \"English\", \"German\", \"Dutch\"). Use \"English\" if unsure.",
   "Only include events that have a clear name. Do not invent events.",
 ].join("\n");
 
@@ -45,6 +47,7 @@ const SCHEMA = {
           event_date: { type: "string" },
           event_date_iso: { type: "string" },
           link: { type: "string" },
+          language: { type: "string" },
         },
         required: ["event_name"],
       },
@@ -111,6 +114,7 @@ async function main() {
           event_date: String(e.event_date ?? "").trim(),
           event_date_iso: String(e.event_date_iso ?? "").trim(),
           link: absolutize(String(e.link ?? "").trim(), site.url),
+          language: String(e.language ?? "").trim(),
           source_page: site.url,
         });
       }
