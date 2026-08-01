@@ -1,31 +1,58 @@
 {
-  "generated_at": "2026-07-03T05:32:56.798Z",
+  "generated_at": "2026-08-01T08:15:16.466Z",
   "site_count": 7,
-  "event_count": 81,
+  "event_count": 79,
   "errors": [],
   "events": [
     {
       "organization": "Center for Creative Inquiry",
-      "event_name": "Living Without Stress, a retreat at Ratna Ling Retreat Center",
-      "event_date": "31 July",
-      "event_date_iso": "2023-07-31",
-      "link": "https://creativeinquiry.org/events/living-without-stress/",
+      "event_name": "The TSK Vision: Psychological Benefits and Real Life Implications",
+      "event_date": "15 August 9:00 am - 11:00 am",
+      "event_date_iso": "2023-08-15",
+      "link": "https://creativeinquiry.org/events/the-tsk-vision/",
+      "language": "English",
+      "source_page": "https://creativeinquiry.org/programs/"
+    },
+    {
+      "organization": "Center for Creative Inquiry",
+      "event_name": "Is All Intelligence Artificial?",
+      "event_date": "24 August 5:30 pm - 6:30 pm",
+      "event_date_iso": "2023-08-24",
+      "link": "https://creativeinquiry.org/events/is-all-intelligence-artificial/",
       "language": "English",
       "source_page": "https://creativeinquiry.org/programs/"
     },
     {
       "organization": "Center for Creative Inquiry",
       "event_name": "How to Be More Fully Alive",
-      "event_date": "20 September",
+      "event_date": "20 September All Day",
       "event_date_iso": "2023-09-20",
       "link": "https://creativeinquiry.org/events/how-to-be-more-fully-alive/",
       "language": "English",
       "source_page": "https://creativeinquiry.org/programs/"
     },
     {
+      "organization": "Nyingma Institute",
+      "event_name": "Advanced Meditation: Practices for Death and Dying 2026",
+      "event_date": "Thursdays, 10:00 – 11:30 AM, PT (Aug 27 – Oct 8, 2025)",
+      "event_date_iso": "2025-08-27",
+      "link": "https://nyingmainstitute.com/courses-new/advanced-meditation-practices-for-death-and-dying-2/",
+      "language": "English",
+      "source_page": "https://nyingmainstitute.com/courses/"
+    },
+    {
+      "organization": "Dharma College",
+      "event_name": "Searcher Reaches Lands Limits (Part 3)",
+      "event_date": "Dec - 15",
+      "event_date_iso": "2025-12-15",
+      "link": "https://dharma-college.com/searcher-reaches-lands-limits-continue/",
+      "language": "English",
+      "source_page": "https://dharma-college.com/calendar/"
+    },
+    {
       "organization": "Mangalam Research Center",
       "event_name": "Classical Sanskrit for Students of Buddhism",
-      "event_date": "January 5, 2026 – June 10, 2026",
+      "event_date": "January 5, 2026 – June 10, 2026*",
       "event_date_iso": "2026-01-05",
       "link": "https://www.mangalamresearch.org/language-programs/",
       "language": "English",
@@ -33,19 +60,10 @@
     },
     {
       "organization": "Dharma College",
-      "event_name": "Gesture of Great Love 3",
+      "event_name": "Gesture of Great Love (Part 3)",
       "event_date": "Jan - 07",
       "event_date_iso": "2026-01-07",
-      "link": "",
-      "language": "English",
-      "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
-      "organization": "Dharma College",
-      "event_name": "Mind Space: Finding Freedom Beyond the Thinking Mind",
-      "event_date": "Jan - 13",
-      "event_date_iso": "2026-01-13",
-      "link": "",
+      "link": "https://dharma-college.com/gesture-of-great-love-continue/",
       "language": "English",
       "source_page": "https://dharma-college.com/calendar/"
     },
@@ -60,16 +78,16 @@
     },
     {
       "organization": "Dharma College",
-      "event_name": "Time Space and Knowledge (Term 1)",
+      "event_name": "Becoming Embodied- Fully Alive",
       "event_date": "Jan - 16",
       "event_date_iso": "2026-01-16",
-      "link": "https://dharma-college.com/time-space-and-knowledge-new-edition-1/",
+      "link": "https://dharma-college.com/becoming-embodied-fully-alive/",
       "language": "English",
       "source_page": "https://dharma-college.com/calendar/"
     },
     {
       "organization": "Dharma College",
-      "event_name": "The Undreamed Self",
+      "event_name": "The Undreamed Self (Part 1)",
       "event_date": "Jan - 27",
       "event_date_iso": "2026-01-27",
       "link": "https://dharma-college.com/the-undreamed-self/",
@@ -77,9 +95,18 @@
       "source_page": "https://dharma-college.com/calendar/"
     },
     {
+      "organization": "Dharma College",
+      "event_name": "Searcher Reaches Lands Limits (Part 4)",
+      "event_date": "Feb - 16",
+      "event_date_iso": "2026-02-16",
+      "link": "https://dharma-college.com/searcher-reaches-lands-limits-continue/",
+      "language": "English",
+      "source_page": "https://dharma-college.com/calendar/"
+    },
+    {
       "organization": "Mangalam Research Center",
-      "event_name": "Poetry Reading & Reception",
-      "event_date": "February 27,  5-6:30",
+      "event_name": "The Practice of Creativity: Expressions of the Dharma in the Arts and the Natural World",
+      "event_date": "February 27, 5-6:30",
       "event_date_iso": "2026-02-27",
       "link": "https://www.mangalamresearch.org/the-practice-of-creativity-workshops-expressions-of-the-dharma-in-the-arts-and-the-natural-world/",
       "language": "English",
@@ -96,16 +123,34 @@
     },
     {
       "organization": "Dharma College",
-      "event_name": "Gesture of Great Love 4",
+      "event_name": "Gesture of Great Love (Part 4)",
       "event_date": "Mar - 04",
       "event_date_iso": "2026-03-04",
-      "link": "",
+      "link": "https://dharma-college.com/gesture-of-great-love-continue/",
       "language": "English",
       "source_page": "https://dharma-college.com/calendar/"
     },
     {
       "organization": "Dharma College",
-      "event_name": "Undreaming the Self (2)",
+      "event_name": "Ways of Knowing Seminar (Part 3)",
+      "event_date": "Mar - 08",
+      "event_date_iso": "2026-03-08",
+      "link": "https://dharma-college.com/ways-of-knowing-continue/",
+      "language": "English",
+      "source_page": "https://dharma-college.com/calendar/"
+    },
+    {
+      "organization": "Dharma College",
+      "event_name": "Time Space and Knowledge (New Edition-1)",
+      "event_date": "Mar - 13",
+      "event_date_iso": "2026-03-13",
+      "link": "https://dharma-college.com/time-space-and-knowledge-new-edition-1/",
+      "language": "English",
+      "source_page": "https://dharma-college.com/calendar/"
+    },
+    {
+      "organization": "Dharma College",
+      "event_name": "Undreaming the Self (Part 2)",
       "event_date": "Mar - 17",
       "event_date_iso": "2026-03-17",
       "link": "",
@@ -132,8 +177,8 @@
     },
     {
       "organization": "Mangalam Research Center",
-      "event_name": "Varieties of Non-Dualism in Late Indian Yogācāra",
-      "event_date": "April 1,  5:30-7",
+      "event_name": "Varieties of Non-Dualism in Late Indian Yogācāra​",
+      "event_date": "April 1, 5:30-7",
       "event_date_iso": "2026-04-01",
       "link": "https://mangalamresearch.org/varieties-of-non-dualism-in-late-indian-yogacara/",
       "language": "English",
@@ -159,10 +204,10 @@
     },
     {
       "organization": "Dharma College",
-      "event_name": "Revelations of Mind / Searcher 5",
+      "event_name": "Searcher Reaches Lands Limits (Part 5)",
       "event_date": "Apr - 06",
       "event_date_iso": "2026-04-06",
-      "link": "",
+      "link": "https://dharma-college.com/searcher-reaches-lands-limits-continue/",
       "language": "English",
       "source_page": "https://dharma-college.com/calendar/"
     },
@@ -171,31 +216,22 @@
       "event_name": "Mind Space: Openness and Being",
       "event_date": "Apr - 07",
       "event_date_iso": "2026-04-07",
-      "link": "",
+      "link": "https://dharma-college.com/mind-space-openness-and-being/",
       "language": "English",
       "source_page": "https://dharma-college.com/calendar/"
     },
     {
       "organization": "Dharma College",
-      "event_name": "Ways of Knowing Seminar",
-      "event_date": "Apr - 12",
-      "event_date_iso": "2026-04-12",
-      "link": "",
-      "language": "English",
-      "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
-      "organization": "Dharma College",
-      "event_name": "Intro to TSK",
-      "event_date": "Apr - 23",
-      "event_date_iso": "2026-04-23",
-      "link": "https://dharma-college.com/time-space-and-knowledge/",
+      "event_name": "Ways of Knowing Seminar (Part 4)",
+      "event_date": "Apr - 26",
+      "event_date_iso": "2026-04-26",
+      "link": "https://dharma-college.com/ways-of-knowing-continue/",
       "language": "English",
       "source_page": "https://dharma-college.com/calendar/"
     },
     {
       "organization": "Mangalam Research Center",
-      "event_name": "No Other Medicine: Help in Hard Times from the Poems of Khunu Lama Tenzin Gyaltsen",
+      "event_name": "How to Live in Hard Times: Examples from Buddhist Lives",
       "event_date": "Tuesday, April 28, 2026, 4-5:30 pm PT",
       "event_date_iso": "2026-04-28",
       "link": "https://www.mangalamresearch.org/how-to-live-in-hard-times/",
@@ -204,19 +240,10 @@
     },
     {
       "organization": "Dharma College",
-      "event_name": "Gesture of Great Love 5",
+      "event_name": "Gesture of Great Love (Part 5)",
       "event_date": "Apr - 29",
       "event_date_iso": "2026-04-29",
-      "link": "",
-      "language": "English",
-      "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
-      "organization": "Dharma College",
-      "event_name": "Connected: The Deep Ecology of Being Human",
-      "event_date": "May - 04",
-      "event_date_iso": "2026-05-04",
-      "link": "https://dharma-college.com/connected-the-ecology-of-being-human/",
+      "link": "https://dharma-college.com/gesture-of-great-love-continue/",
       "language": "English",
       "source_page": "https://dharma-college.com/calendar/"
     },
@@ -240,43 +267,7 @@
     },
     {
       "organization": "Dharma College",
-      "event_name": "Gesture of Great Love; Point of Contact",
-      "event_date": "May - 07",
-      "event_date_iso": "2026-05-07",
-      "link": "https://dharma-college.com/gesture-of-great-love-part-1/",
-      "language": "English",
-      "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
-      "organization": "Dharma College",
-      "event_name": "Moving Meditation: Awareness in Motion",
-      "event_date": "May - 12",
-      "event_date_iso": "2026-05-12",
-      "link": "https://dharma-college.com/moving-meditation-integrating-body-mind-and-senses-2/",
-      "language": "English",
-      "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
-      "organization": "Dharma College",
-      "event_name": "Searcher Reaches Land's Limits (Part 5)",
-      "event_date": "May - 12",
-      "event_date_iso": "2026-05-12",
-      "link": "https://dharma-college.com/searcher-reaches-lands-limits-part-1/",
-      "language": "English",
-      "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
-      "organization": "Dharma College",
-      "event_name": "Ways of Knowing Seminar",
-      "event_date": "May - 12",
-      "event_date_iso": "2026-05-12",
-      "link": "https://dharma-college.com/ways-of-knowing/",
-      "language": "English",
-      "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
-      "organization": "Dharma College",
-      "event_name": "Undreaming the Self (3)",
+      "event_name": "Undreaming the Self (Part 3)",
       "event_date": "May - 12",
       "event_date_iso": "2026-05-12",
       "link": "",
@@ -293,27 +284,9 @@
       "source_page": "https://odiyan.org/odiyan-programs/"
     },
     {
-      "organization": "Dharma College",
-      "event_name": "Science, Experience, and Interdependence",
-      "event_date": "May - 15",
-      "event_date_iso": "2026-05-15",
-      "link": "https://dharma-college.com/science-experience-and-interdependence/",
-      "language": "English",
-      "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
-      "organization": "Dharma College",
-      "event_name": "Time Space and Knowledge (New Edition) 3",
-      "event_date": "May - 15",
-      "event_date_iso": "2026-05-15",
-      "link": "",
-      "language": "English",
-      "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
       "organization": "Odiyan",
       "event_name": "being now: how to navigate uncertain times",
-      "event_date": "May 23, Sat, 9 am – 4:30 pm PDT",
+      "event_date": "May 23, Sat, 9 am – 4:30 pm PDT\nMay 24, Sun, 9 am – 12 pm PDT",
       "event_date_iso": "2026-05-23",
       "link": "https://odiyan.org/odiyan-programs/being-now/",
       "language": "English",
@@ -321,120 +294,12 @@
     },
     {
       "organization": "Dharma College",
-      "event_name": "Dancing in Totality",
-      "event_date": "Jun - 01",
-      "event_date_iso": "2026-06-01",
-      "link": "",
+      "event_name": "Ways of Knowing Seminar (Part 5)",
+      "event_date": "Jun - 14",
+      "event_date_iso": "2026-06-14",
+      "link": "https://dharma-college.com/ways-of-knowing-continue/",
       "language": "English",
       "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
-      "organization": "Dharma College",
-      "event_name": "Working with Joy: Transforming Work into a Spiritual Path",
-      "event_date": "Jun - 13",
-      "event_date_iso": "2026-06-13",
-      "link": "https://dharma-college.com/working-with-joy-transforming-work-into-a-spiritual-path/",
-      "language": "English",
-      "source_page": "https://dharma-college.com/calendar/"
-    },
-    {
-      "organization": "Nyingma Institute",
-      "event_name": "The Way of the Bodhisattva: Daily Practice Program",
-      "event_date": "June 15 — July 24, 2026",
-      "event_date_iso": "2026-06-15",
-      "link": "https://nyingmainstitute.com/courses-new/the-way-of-the-bodhisattva-daily-practice-program-2/",
-      "language": "English",
-      "source_page": "https://nyingmainstitute.com/courses/"
-    },
-    {
-      "organization": "Nyingma Institute",
-      "event_name": "Advanced Kum Nye: Activating Knowledge through Kum Nye",
-      "event_date": "June 16 — July 7, 2026",
-      "event_date_iso": "2026-06-16",
-      "link": "https://nyingmainstitute.com/courses-new/advanced-kum-nye-activating-knowledge-through-kum-nye/",
-      "language": "English",
-      "source_page": "https://nyingmainstitute.com/courses/"
-    },
-    {
-      "organization": "Nyingma Institute",
-      "event_name": "The Way of the Bodhisattva",
-      "event_date": "June 16 — July 21, 2026",
-      "event_date_iso": "2026-06-16",
-      "link": "https://nyingmainstitute.com/courses-new/the-way-of-the-bodhisattva-2/",
-      "language": "English",
-      "source_page": "https://nyingmainstitute.com/courses/"
-    },
-    {
-      "organization": "Nyingma Institute",
-      "event_name": "Beginning Tibetan",
-      "event_date": "June 17 — August 5, 2026",
-      "event_date_iso": "2026-06-17",
-      "link": "https://nyingmainstitute.com/courses-new/beginning-tibetan-2/",
-      "language": "English",
-      "source_page": "https://nyingmainstitute.com/courses/"
-    },
-    {
-      "organization": "Nyingma Institute",
-      "event_name": "Kum Nye Relaxation: All Levels Practice",
-      "event_date": "June 17 — July 22, 2026",
-      "event_date_iso": "2026-06-17",
-      "link": "https://nyingmainstitute.com/courses-new/kum-nye-relaxation-all-levels-practice-2/",
-      "language": "English",
-      "source_page": "https://nyingmainstitute.com/courses/"
-    },
-    {
-      "organization": "Nyingma Institute",
-      "event_name": "Intermediate Tibetan Level XVI",
-      "event_date": "June 18 — August 6, 2026",
-      "event_date_iso": "2026-06-18",
-      "link": "https://nyingmainstitute.com/courses-new/intermediate-tibetan-level-xvi/",
-      "language": "English",
-      "source_page": "https://nyingmainstitute.com/courses/"
-    },
-    {
-      "organization": "Nyingma Institute",
-      "event_name": "Wisdom and Compassion in Every Day Life: A Journey into Aryadeva’s Four Hundred Verse Treatise",
-      "event_date": "June 19 — August 7, 2026",
-      "event_date_iso": "2026-06-19",
-      "link": "https://nyingmainstitute.com/courses-new/wisdom-and-compassion-in-every-day-life-a-journey-into-aryadevas-four-hundred-verse-treatise/",
-      "language": "English",
-      "source_page": "https://nyingmainstitute.com/courses/"
-    },
-    {
-      "organization": "Nyingma Institute",
-      "event_name": "Intermediate Meditation: Taking the Teachings to Heart",
-      "event_date": "June 25 — July 16, 2026",
-      "event_date_iso": "2026-06-25",
-      "link": "https://nyingmainstitute.com/courses-new/intermediate-meditation-taking-the-teachings-to-heart-2/",
-      "language": "English",
-      "source_page": "https://nyingmainstitute.com/courses/"
-    },
-    {
-      "organization": "Stupa Retreat Center",
-      "event_name": "Sommerliche Fastenauszeit mit Kum Nye",
-      "event_date": "Fri 03 Jul - Sat 11 Jul 2026",
-      "event_date_iso": "2026-07-03",
-      "link": "https://www.stupacenter.org/calendar/sommerliche-fastenauszeit-mit-kum-nye/",
-      "language": "German",
-      "source_page": "https://www.stupacenter.org/retreats/"
-    },
-    {
-      "organization": "Nyingma Institute",
-      "event_name": "Beginning Meditation: Activating the Energy Centers",
-      "event_date": "July 8 — July 29, 2026",
-      "event_date_iso": "2026-07-08",
-      "link": "https://nyingmainstitute.com/courses-new/beginning-meditation-activating-the-energy-centers/",
-      "language": "English",
-      "source_page": "https://nyingmainstitute.com/courses/"
-    },
-    {
-      "organization": "Stupa Retreat Center",
-      "event_name": "Healthy Planet Inspiratiedag",
-      "event_date": "Wed 15 Jul - Wed 15 Jul 2026",
-      "event_date_iso": "2026-07-15",
-      "link": "https://www.stupacenter.org/calendar/dagje-healthy-planet/",
-      "language": "Dutch",
-      "source_page": "https://www.stupacenter.org/retreats/"
     },
     {
       "organization": "Odiyan",
@@ -444,24 +309,6 @@
       "link": "https://ratnaling.org/retreats/5202/refresh-renew-and-recharge-a-midsummer-meditation-retreat-copy/",
       "language": "English",
       "source_page": "https://odiyan.org/odiyan-programs/"
-    },
-    {
-      "organization": "Stupa Retreat Center",
-      "event_name": "Healthy Planet Summer Weekend: A Feast for the Senses",
-      "event_date": "Fri 24 Jul - Sun 26 Jul 2026",
-      "event_date_iso": "2026-07-24",
-      "link": "https://www.stupacenter.org/calendar/healthy-planet-weekend-zintuigelijke-zomer/",
-      "language": "Dutch",
-      "source_page": "https://www.stupacenter.org/retreats/"
-    },
-    {
-      "organization": "Stupa Retreat Center",
-      "event_name": "Mit offenen Sinnen gegenwärtig sein",
-      "event_date": "Mon 27 Jul - Sun 02 Aug 2026",
-      "event_date_iso": "2026-07-27",
-      "link": "https://www.stupacenter.org/calendar/mit-offenen-sinnen-gegenwaertig-sein/",
-      "language": "German",
-      "source_page": "https://www.stupacenter.org/retreats/"
     },
     {
       "organization": "Odiyan",
@@ -484,7 +331,7 @@
     {
       "organization": "Odiyan",
       "event_name": "a treasure within",
-      "event_date": "Aug 8, Sat, 9 am – 4 pm PDT",
+      "event_date": "Aug 8, Sat, 9 am – 4 pm PDT\nAug 9, Sun, 9 am – 12:30 pm PDT",
       "event_date_iso": "2026-08-08",
       "link": "https://odiyan.org/odiyan-programs/a-treasure-within/",
       "language": "English",
@@ -492,7 +339,7 @@
     },
     {
       "organization": "Ratna Ling",
-      "event_name": "Being Now: How to Navigate Uncertain Times",
+      "event_name": "Here and Now: Navigating Uncertain Times",
       "event_date": "August 14 - 16, 2026",
       "event_date_iso": "2026-08-14",
       "link": "https://ratnaling.org/retreats/5512/being-now-how-to-navigate-uncertain-times",
@@ -502,7 +349,7 @@
     {
       "organization": "Odiyan",
       "event_name": "being now: how to navigate uncertain times",
-      "event_date": "Friday August 14, 6:30 PM – Sunday August 16,  10 AM PDT",
+      "event_date": "Friday August 14, 6:30 PM – Sunday August 16, 10 AM PDT",
       "event_date_iso": "2026-08-14",
       "link": "https://ratnaling.org/retreats/5512/being-now-how-to-navigate-uncertain-times/",
       "language": "English",
@@ -518,11 +365,74 @@
       "source_page": "https://www.stupacenter.org/retreats/"
     },
     {
+      "organization": "Dharma College",
+      "event_name": "Ways of Knowing Seminar (Part 1)",
+      "event_date": "Aug - 17",
+      "event_date_iso": "2026-08-17",
+      "link": "https://dharma-college.com/ways-of-knowing-2/",
+      "language": "English",
+      "source_page": "https://dharma-college.com/calendar/"
+    },
+    {
+      "organization": "Nyingma Institute",
+      "event_name": "Advanced Kum Nye: Activating Knowledge through Kum Nye",
+      "event_date": "Tuesdays, 7:00 – 8:30 pm, PT (August 18 – October 6, 2026)",
+      "event_date_iso": "2026-08-18",
+      "link": "https://nyingmainstitute.com/courses-new/advanced-kum-nye-activating-knowledge-through-kum-nye-2/",
+      "language": "English",
+      "source_page": "https://nyingmainstitute.com/courses/"
+    },
+    {
+      "organization": "Nyingma Institute",
+      "event_name": "Beginning Tibetan",
+      "event_date": "Wednesdays, 6:00 – 7:00 PM, PT (August 19 – October 7, 2026)",
+      "event_date_iso": "2026-08-19",
+      "link": "https://nyingmainstitute.com/courses-new/beginning-tibetan-3/",
+      "language": "English",
+      "source_page": "https://nyingmainstitute.com/courses/"
+    },
+    {
+      "organization": "Nyingma Institute",
+      "event_name": "Kum Nye Relaxation: The Inner and Outer Massage of Feeling",
+      "event_date": "Wednesdays, 8:00 – 9:00 AM, PT (August 19 – October 7, 2026)",
+      "event_date_iso": "2026-08-19",
+      "link": "https://nyingmainstitute.com/courses-new/kum-nye-relaxation-the-inner-and-outer-massage-of-feeling/",
+      "language": "English",
+      "source_page": "https://nyingmainstitute.com/courses/"
+    },
+    {
+      "organization": "Nyingma Institute",
+      "event_name": "Beginning Meditation: The Fundamentals of Relaxation",
+      "event_date": "Wednesdays, 6:00 – 7:00 PM, PT (August 19 – September 23, 2026)",
+      "event_date_iso": "2026-08-19",
+      "link": "https://nyingmainstitute.com/courses-new/beginning-meditation-the-fundamentals-of-relaxation/",
+      "language": "English",
+      "source_page": "https://nyingmainstitute.com/courses/"
+    },
+    {
+      "organization": "Nyingma Institute",
+      "event_name": "Intermediate Tibetan Level XVII",
+      "event_date": "Thursdays, 6:15 – 7:45 pm, PT (August 20 – October 8, 2026)",
+      "event_date_iso": "2026-08-20",
+      "link": "https://nyingmainstitute.com/courses-new/intermediate-tibetan-level-xvii/",
+      "language": "English",
+      "source_page": "https://nyingmainstitute.com/courses/"
+    },
+    {
+      "organization": "Nyingma Institute",
+      "event_name": "Wisdom and Compassion in Every Day Life: A Journey into Aryadeva’s Four Hundred Verse Treatise Part 2",
+      "event_date": "Fridays, 6:00 – 7:00 PM, PT (August 21 – October 9, 2026)",
+      "event_date_iso": "2026-08-21",
+      "link": "https://nyingmainstitute.com/courses-new/wisdom-and-compassion-in-every-day-life-a-journey-into-aryadevas-four-hundred-verse-treatise-part-2/",
+      "language": "English",
+      "source_page": "https://nyingmainstitute.com/courses/"
+    },
+    {
       "organization": "Ratna Ling",
-      "event_name": "Awakening the Balanced Mind Bringing Peace into Everyday Life – ONLINE",
+      "event_name": "Bringing Peace into Everyday Life – Online",
       "event_date": "August 22 - September 26, 2026",
       "event_date_iso": "2026-08-22",
-      "link": "https://ratnaling.org/retreats/5652/awakening-the-balanced-mind-bringing-peace-into-everyday-life-online",
+      "link": "https://ratnaling.org/retreats/5796/bringing-peace-into-everyday-life-online",
       "language": "English",
       "source_page": "https://ratnaling.org/online-programs/"
     },
@@ -545,6 +455,24 @@
       "source_page": "https://www.stupacenter.org/retreats/"
     },
     {
+      "organization": "Nyingma Institute",
+      "event_name": "Lotus Trilogy Program Early Fall 2026 Term",
+      "event_date": "Fridays, 10:00 – 11:30 AM, PT (August 28 – October 10, 2026)",
+      "event_date_iso": "2026-08-28",
+      "link": "https://nyingmainstitute.com/courses-new/lotus-trilogy-program/",
+      "language": "English",
+      "source_page": "https://nyingmainstitute.com/courses/"
+    },
+    {
+      "organization": "Nyingma Institute",
+      "event_name": "Joy of Being Term 5: Exercises for the Mind and Orienting the Mind to Joy",
+      "event_date": "Weekly Class: Mondays & Wednesdays, (August 31 – October 10, 2026)",
+      "event_date_iso": "2026-08-31",
+      "link": "https://nyingmainstitute.com/courses-new/joy-of-being-term-5-exercises-for-the-mind-and-orienting-the-mind-to-joy/",
+      "language": "English",
+      "source_page": "https://nyingmainstitute.com/courses/"
+    },
+    {
       "organization": "Stupa Retreat Center",
       "event_name": "One with the World",
       "event_date": "Mon 31 Aug - Sun 06 Sep 2026",
@@ -555,12 +483,30 @@
     },
     {
       "organization": "Dharma College",
-      "event_name": "Searcher Reaches Lands Limits (Term 1)",
+      "event_name": "Natural Awakening: Dancing in Totality",
+      "event_date": "Sep - 05",
+      "event_date_iso": "2026-09-05",
+      "link": "https://dharma-college.com/natural-awakening-dancing-in-totality/",
+      "language": "English",
+      "source_page": "https://dharma-college.com/calendar/"
+    },
+    {
+      "organization": "Dharma College",
+      "event_name": "Searcher Reaches Lands Limits (Part 1)",
       "event_date": "Sep - 08",
       "event_date_iso": "2026-09-08",
       "link": "https://dharma-college.com/searcher-reaches-lands-limits-revelations-of-mind/",
       "language": "English",
       "source_page": "https://dharma-college.com/calendar/"
+    },
+    {
+      "organization": "Ratna Ling",
+      "event_name": "Mind Space – Finding the Groundless Ground – Online",
+      "event_date": "September 9 - October 14, 2026",
+      "event_date_iso": "2026-09-09",
+      "link": "https://ratnaling.org/retreats/5800/mind-space-finding-the-groundless-ground-online",
+      "language": "English",
+      "source_page": "https://ratnaling.org/online-programs/"
     },
     {
       "organization": "Dharma College",
@@ -573,7 +519,7 @@
     },
     {
       "organization": "Dharma College",
-      "event_name": "Gesture of Great Love (Term 1)",
+      "event_name": "Gesture of Great Love (Part 1)",
       "event_date": "Sep - 10",
       "event_date_iso": "2026-09-10",
       "link": "https://dharma-college.com/gesture-of-great-love/",
@@ -582,12 +528,30 @@
     },
     {
       "organization": "Stupa Retreat Center",
-      "event_name": "KumNye ImPulse of the Cello",
+      "event_name": "KumNye Impulse of the Cello",
       "event_date": "Fri 18 Sep - Sun 20 Sep 2026",
       "event_date_iso": "2026-09-18",
       "link": "https://www.stupacenter.org/calendar/kumnye-impulse-of-the-cello/",
       "language": "English",
       "source_page": "https://www.stupacenter.org/retreats/"
+    },
+    {
+      "organization": "Stupa Retreat Center",
+      "event_name": "Stupa Center Volunteer Weekend",
+      "event_date": "Fri 25 Sep - Sun 27 Sep 2026",
+      "event_date_iso": "2026-09-25",
+      "link": "https://www.stupacenter.org/calendar/stupa-center-volunteer-weekend/",
+      "language": "Language is no obstacle",
+      "source_page": "https://www.stupacenter.org/retreats/"
+    },
+    {
+      "organization": "Ratna Ling",
+      "event_name": "The Mind, Suffering, and Freedom – Online",
+      "event_date": "October 1 - November 5, 2026",
+      "event_date_iso": "2026-10-01",
+      "link": "https://ratnaling.org/retreats/5798/the-mind-suffering-and-freedom",
+      "language": "English",
+      "source_page": "https://ratnaling.org/online-programs/"
     },
     {
       "organization": "Dharma College",
@@ -606,15 +570,6 @@
       "link": "https://www.stupacenter.org/calendar/healthy-planet-happy-life-caring-for-ourselves-others-and-the-world/",
       "language": "English",
       "source_page": "https://www.stupacenter.org/retreats/"
-    },
-    {
-      "organization": "Dharma College",
-      "event_name": "Ways of Knowing Seminar",
-      "event_date": "Oct - 12",
-      "event_date_iso": "2026-10-12",
-      "link": "",
-      "language": "English",
-      "source_page": "https://dharma-college.com/calendar/"
     },
     {
       "organization": "Odiyan",
@@ -636,19 +591,19 @@
     },
     {
       "organization": "Dharma College",
-      "event_name": "Revelations of Mind / Searcher Term - 2",
+      "event_name": "Searcher Reaches Lands Limits (Part 2)",
       "event_date": "Oct - 27",
       "event_date_iso": "2026-10-27",
-      "link": "",
+      "link": "https://dharma-college.com/searcher-reaches-lands-limits-continue/",
       "language": "English",
       "source_page": "https://dharma-college.com/calendar/"
     },
     {
       "organization": "Dharma College",
-      "event_name": "Gesture of Great Love Term - 2",
+      "event_name": "Gesture of Great Love (Part 2)",
       "event_date": "Nov - 05",
       "event_date_iso": "2026-11-05",
-      "link": "",
+      "link": "https://dharma-college.com/gesture-of-great-love-continue/",
       "language": "English",
       "source_page": "https://dharma-college.com/calendar/"
     },
@@ -658,7 +613,16 @@
       "event_date": "Fri 06 Nov - Sun 08 Nov 2026",
       "event_date_iso": "2026-11-06",
       "link": "https://www.stupacenter.org/calendar/openen-naar-inzichten/",
-      "language": "Dutch",
+      "language": "Nederlands",
+      "source_page": "https://www.stupacenter.org/retreats/"
+    },
+    {
+      "organization": "Stupa Retreat Center",
+      "event_name": "Discover Buddhist Sacred Art at the World Peace Stupa Center",
+      "event_date": "Fri 13 Nov - Sun 15 Nov 2026",
+      "event_date_iso": "2026-11-13",
+      "link": "https://www.stupacenter.org/calendar/discover-buddhist-sacred-art-at-the-world-peace-stupa-center/",
+      "language": "Language is no obstacle",
       "source_page": "https://www.stupacenter.org/retreats/"
     },
     {
@@ -667,6 +631,15 @@
       "event_date": "Nov - 14",
       "event_date_iso": "2026-11-14",
       "link": "https://dharma-college.com/feeling-fully-alive/",
+      "language": "English",
+      "source_page": "https://dharma-college.com/calendar/"
+    },
+    {
+      "organization": "Dharma College",
+      "event_name": "Ways of Knowing Seminar (Part 2)",
+      "event_date": "Nov - 16",
+      "event_date_iso": "2026-11-16",
+      "link": "https://dharma-college.com/ways-of-knowing-continue/",
       "language": "English",
       "source_page": "https://dharma-college.com/calendar/"
     },
@@ -685,16 +658,16 @@
       "event_date": "Fri 04 Dec - Sun 06 Dec 2026",
       "event_date_iso": "2026-12-04",
       "link": "https://www.stupacenter.org/calendar/healthy-planet-happy-life-caring-for-nature/",
-      "language": "Dutch",
+      "language": "English",
       "source_page": "https://www.stupacenter.org/retreats/"
     },
     {
       "organization": "Stupa Retreat Center",
-      "event_name": "Trust and Refuge",
+      "event_name": "Faith and Refuge",
       "event_date": "Fri 11 Dec - Sun 13 Dec 2026",
       "event_date_iso": "2026-12-11",
       "link": "https://www.stupacenter.org/calendar/vertrouwen_en_toevlucht/",
-      "language": "Dutch",
+      "language": "Nederlands",
       "source_page": "https://www.stupacenter.org/retreats/"
     },
     {
@@ -708,11 +681,20 @@
     },
     {
       "organization": "Stupa Retreat Center",
+      "event_name": "Choosing the Positive!",
+      "event_date": "Sat 26 Dec - Wed 30 Dec 2026",
+      "event_date_iso": "2026-12-26",
+      "link": "https://www.stupacenter.org/calendar/das-positive-wahlen/",
+      "language": "Deutsch",
+      "source_page": "https://www.stupacenter.org/retreats/"
+    },
+    {
+      "organization": "Stupa Retreat Center",
       "event_name": "The Power of Time Retreat",
       "event_date": "Fri 05 Feb - Sun 07 Feb 2027",
       "event_date_iso": "2027-02-05",
       "link": "https://www.stupacenter.org/calendar/the-power-of-time-retreat/",
-      "language": "Dutch",
+      "language": "Nederlands",
       "source_page": "https://www.stupacenter.org/retreats/"
     },
     {
@@ -721,7 +703,7 @@
       "event_date": "Fri 12 Feb - Tue 23 Feb 2027",
       "event_date_iso": "2027-02-12",
       "link": "https://www.stupacenter.org/calendar/the-noble-eightfold-path-buddha/",
-      "language": "Dutch",
+      "language": "Nederlands",
       "source_page": "https://www.stupacenter.org/retreats/"
     },
     {
